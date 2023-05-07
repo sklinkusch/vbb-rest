@@ -47,6 +47,7 @@
 	"scripts": {
 		"build": "REDIS_URL='' ./build/index.js",
 		"start": "node index.js",
+		"install": "REDIS_URL='' ./build/index.js",
 		"lint": "eslint .",
 		"test": "node test/index.js | tap-min"
 	},
