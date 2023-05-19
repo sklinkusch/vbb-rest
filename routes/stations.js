@@ -57,6 +57,7 @@ const stationsRoute = (req, res, next) => {
 		return next(err(JSON + ' or ' + NDJSON_MIME, 406))
 	}
 
+	res.setHeader('Access-Control-Allow-Origin', '*')
 	res.setHeader('Last-Modified', timeModified.toUTCString())
 	res.setHeader('Content-Type', t)
 
